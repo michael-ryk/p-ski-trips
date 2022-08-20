@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import classes from './Trip.module.css';
 
-const Trip = ({site, image, country, price, description}) => {
+const Trip = ({id, site, image, country, price, description, removeTrip}) => {
   
   const [expandDescription, setExpandDescription] = useState(false);
-  
+
   return (
     <article className={classes['single-trip']}>
       <h1>{site}</h1>
@@ -21,7 +21,7 @@ const Trip = ({site, image, country, price, description}) => {
         </p>
       </div>
       <div>
-        <button className={classes['primary-btn']}>Button</button>
+        <button className={classes['primary-btn']} onClick={() => removeTrip(id)}>Remove from list</button>
       </div>
     </article>
   )

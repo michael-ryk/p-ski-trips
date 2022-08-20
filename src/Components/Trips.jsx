@@ -2,7 +2,7 @@ import Trip from './Trip';
 
 import classes from './Trips.module.css';
 
-const Trips = ({trips}) => {
+const Trips = ({trips, removeTrip}) => {
   return (
     <section>
       <div className={classes.title}>
@@ -10,7 +10,7 @@ const Trips = ({trips}) => {
       </div>
       <div>
         {trips.map(trip => {
-          return <Trip key={trip.id} {...trip}/>
+          return <Trip key={trip.id} {...trip} removeTrip={removeTrip}/>
           }
         )}
       </div>

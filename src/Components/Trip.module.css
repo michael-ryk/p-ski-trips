@@ -38,7 +38,7 @@
 }
 
 .primary-btn {
-  background: #2980b9;
+  background: #e8847d;
   color: #ffffff;
   border: 0;
   border-radius: 10px;
@@ -49,5 +49,5 @@
 }
 
 .primary-btn:hover {
-  background: #478dbc;
+  background: #e24c42;
 }
