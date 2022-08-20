@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import classes from './Trip.module.css';
 
 const Trip = ({site, image, country, price, description}) => {
+  
+  const [expandDescription, setExpandDescription] = useState(false);
+  
   return (
     <article className={classes['single-trip']}>
       <h1>{site}</h1>
@@ -10,8 +14,14 @@ const Trip = ({site, image, country, price, description}) => {
           <h2>{country}</h2>
           <h3 className={classes['trip-price']}>${price}</h3>
         </div>
-        <p>{description}</p>
-        <button>Button</button>
+        <p>{expandDescription ? description : `${description.substring(0,130)}...`}
+          <button onClick={() => setExpandDescription(!expandDescription)}>
+            {expandDescription ? 'Show less' : 'Show more'}
+          </button>
+        </p>
+      </div>
+      <div>
+        <button className={classes['primary-btn']}>Button</button>
       </div>
     </article>
   )

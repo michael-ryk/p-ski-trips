@@ -14,19 +14,17 @@
   width: 100%;
 }
 
-.single-trip button {
-  background: #2980b9;
-  color: #ffffff;
+.trip-info button {
+  background: transparent;
+  color: #2980b9;
   border: 0;
-  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
-  margin-top: 0.5rem;
-  padding: 0.5rem 2rem;
+  padding-left: 0.25rem;
 }
 
-.single-trip button:hover {
-  background: #478dbc;
+.trip-info button:hover {
+  color: #124465;
 }
 
 .trip-info-header {
@@ -37,4 +35,19 @@
 
 .trip-price {
   color: #2980b9;
+}
+
+.primary-btn {
+  background: #2980b9;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.primary-btn:hover {
+  background: #478dbc;
 }
