@@ -6,7 +6,7 @@ const Trips = ({trips}) => {
   return (
     <section>
       <div className={classes.title}>
-        <h2>List of Ski resorts to visit</h2>
+        <h1>List of Ski resorts to visit</h1>
       </div>
       <div>
         {trips.map(trip => {

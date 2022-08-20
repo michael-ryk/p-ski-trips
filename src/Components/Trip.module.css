@@ -1,9 +1,40 @@
 .single-trip {
-  /* background-color: aquamarine; */
   border-radius: 10px;
   border: 1px solid #9fa4a8;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
   margin: 15px auto;
   padding: 15px;
-  
+}
+
+.single-trip:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.single-trip img {
+  width: 100%;
+}
+
+.single-trip button {
+  background: #2980b9;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.single-trip button:hover {
+  background: #478dbc;
+}
+
+.trip-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trip-price {
+  color: #2980b9;
 }

@@ -1,10 +1,36 @@
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #065285;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 main {
-  width: 90vw;
+  width: 95vw;
   max-width: 600px;
-  margin: 5rem auto;
+  margin: 1rem auto;
 }
